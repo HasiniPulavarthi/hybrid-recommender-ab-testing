@@ -1,0 +1,98 @@
+{
+  "config": {
+    "n_users": 3000,
+    "n_items": 500,
+    "alpha": 0.6,
+    "k_eval": 10,
+    "base_ctr": 0.08,
+    "seed": 42
+  },
+  "offline_evaluation": {
+    "popularity": {
+      "precision@k": 0.007482993197278912,
+      "recall@k": 0.06349206349206349,
+      "ndcg@k": 0.02765825701838744,
+      "n_eval_users": 147
+    },
+    "collaborative": {
+      "precision@k": 0.08095238095238094,
+      "recall@k": 0.6190476190476191,
+      "ndcg@k": 0.303763874109533,
+      "n_eval_users": 147
+    },
+    "content": {
+      "precision@k": 0.05918367346938775,
+      "recall@k": 0.4229024943310658,
+      "ndcg@k": 0.20291596870989564,
+      "n_eval_users": 147
+    },
+    "hybrid": {
+      "precision@k": 0.07687074829931972,
+      "recall@k": 0.5736961451247166,
+      "ndcg@k": 0.2822013088885734,
+      "n_eval_users": 147
+    }
+  },
+  "ab_test": {
+    "ctr": {
+      "rate_control": 0.08645970937912814,
+      "rate_treatment": 0.10275908479138628,
+      "abs_diff": 0.016299375412258135,
+      "lift_pct": 18.851989590648447,
+      "z_stat": 4.824518301112738,
+      "p_value": 1.4034203132951006e-06,
+      "chi2_stat": 23.275976837771772,
+      "chi2_p_value": 1.403420313292933e-06,
+      "ci_95": [
+        0.009675419203108944,
+        0.022923331621407327
+      ],
+      "significant": true,
+      "alpha": 0.05
+    },
+    "engagement": {
+      "rate_control": 0.032298546895640684,
+      "rate_treatment": 0.03755047106325707,
+      "abs_diff": 0.005251924167616384,
+      "lift_pct": 16.260558670288766,
+      "z_stat": 2.47817111333166,
+      "p_value": 0.01320577958365643,
+      "chi2_stat": 6.141332066951463,
+      "chi2_p_value": 0.013205779583656674,
+      "ci_95": [
+        0.001095761122334899,
+        0.009408087212897868
+      ],
+      "significant": true,
+      "alpha": 0.05
+    },
+    "ctr_summary": {
+      "impressions": {
+        "control": 15140,
+        "treatment": 14860
+      },
+      "clicks": {
+        "control": 1309,
+        "treatment": 1527
+      },
+      "ctr": {
+        "control": 0.08645970937912814,
+        "treatment": 0.10275908479138628
+      }
+    },
+    "engagement_summary": {
+      "impressions": {
+        "control": 15140,
+        "treatment": 14860
+      },
+      "engagements": {
+        "control": 489,
+        "treatment": 558
+      },
+      "engagement_rate": {
+        "control": 0.032298546895640684,
+        "treatment": 0.03755047106325707
+      }
+    }
+  }
+}
