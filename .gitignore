@@ -1,0 +1,33 @@
+# Byte-compiled / cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+
+# Project-specific: large generated data, keep only the summary artifacts
+output/ab_test_impressions.csv
+
+# Streamlit
+.streamlit/
+
+# Environment variables (if you ever add API keys etc.)
+.env
